@@ -21,17 +21,10 @@ import logging
 import os
 import sys
 
+from transformers import AutoImageProcessor, AutoModelForDepthEstimation
+import torch
+
 logger = logging.getLogger('TDAppLogger')
-try:
-	from transformers import AutoImageProcessor, AutoModelForDepthEstimation
-	import torch
-except ImportError as e:
-	logger.error(f'TDDepthAnything - An error occured trying to import some of the required libraries. Make sure that the environment is setup properly.')
-	logger.error(f'TDDepthAnything - {e}')
-	logger.error(f'TDDepthAnything - If you are using a custom python environment, make sure that the following packages are installed: transformers, torch')
-except Exception as e:
-	logger.error(f'TDDepthAnything - An error occured trying to import some of the required libraries. Make sure that the environment is setup properly.')
-	logger.error(f'TDDepthAnything - {e}')
 
 class TDDepthAnythingExt:
 	"""
