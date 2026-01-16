@@ -1,4 +1,4 @@
---extra-index-url https://download.pytorch.org/whl/cu128; sys_platform == 'windows'
+--extra-index-url https://download.pytorch.org/whl/cu128
 torch
 torchaudio
 torchvision
