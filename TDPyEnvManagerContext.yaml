@@ -1,0 +1,8 @@
+active: true
+mode: Python vEnv
+envName: .venv
+installPath: .
+pythonVersion: '3.11'
+autoSetup: true
+autoSetupReqs: []
+extraPaths: []
