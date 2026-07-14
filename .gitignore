@@ -3,3 +3,4 @@ checkpoints
 Backup
 TDDepthAnything.*.toe
 *.code-workspace
+.venv
